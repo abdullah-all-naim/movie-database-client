@@ -1,0 +1,15 @@
+.App {
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(../../images/bg.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .rec-carousel-item:focus {
+    outline: none;
+    box-shadow: inset 0 0 1px 0px violet;
+  }
