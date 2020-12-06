@@ -51,7 +51,7 @@ const Footer = () => {
             </div>
             <div className="ft-copyright">
                 <div className="ft-left">
-                    <p>© 2020 Blockbuster. All Rights Reserved. Designed by Naim.</p>
+                    <p>© 2020 Blockbuster. All Rights Reserved. Designed by Peter Ndukwe.</p>
                 </div>
                 <div className="backtotop">
                     <p><a id="back-to-top">Back to top <i className="ion-ios-arrow-thin-up"></i></a></p>

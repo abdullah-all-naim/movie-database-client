@@ -60,14 +60,6 @@ const UserProfile = () => {
     const history = useHistory()
     const userInfo = JSON.parse(sessionStorage.getItem('isLoggedIn'))
     const [userMail, setUserMail] = useState([])
-    // useEffect(() => {
-    //     fetch('https://secure-mountain-78898.herokuapp.com/getuserinfo')
-    //         .then(res => res.json())
-    //         .then(data => {
-    //             setUserMail(data)
-    //         })
-    // }, [])
-    // let userEmail = userMail.find(x => x.name === userInfo.name)
     const handleClick = () => {
         history.push('/login')
         window.location.reload()

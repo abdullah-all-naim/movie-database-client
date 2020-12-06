@@ -53,8 +53,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function FullWidthTab({ movieHeading }) {
-  console.log(movieHeading)
-  movieHeading.Actors.split(',').map(x => console.log(x));
   const classes = useStyles();
   const theme = useTheme();
   const [value, setValue] = React.useState(0);

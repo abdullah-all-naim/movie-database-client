@@ -8,8 +8,6 @@ export default function ReviewWriting({ movieHeading }) {
         rating: movieHeading.imdbRating,
         image: movieHeading.Poster
     }
-    console.log(movieHeading)
-    console.log(movieShortDetails)
     const [open, setOpen] = React.useState(false);
 
     const handleClickOpen = () => {

@@ -1,18 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import movieData from '../MovieData/movie-data.json';
-import { makeStyles, withTheme } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import Pagination from '@material-ui/lab/Pagination';
 
 const MovieGrid = () => {
-    console.log(movieData)
-
     const [showMovieDetails, setShowMovieDetails] = useState(movieData);
     const [pageNumber, setPageNumber] = useState(1)
     const history = useHistory()
 
     const useStyles = makeStyles((theme) => ({
-        // console.log(theme)
         root: {
             '& > *': {
                 margin: theme.spacing(0),
@@ -52,8 +49,8 @@ const MovieGrid = () => {
                             <div className = "hero-ct">
                                 <h1> movie listing - grid</h1>
                                 <ul className = "breadcumb">
-                                    <li className = "active"><Link to='/'>Home</Link></li>
-                                    <li> <span className = "ion-ios-arrow-right"></span> movie listing</li>
+                                    <li className = "active"><Link to='/'>Home > </Link></li>
+                                    <li>movie listing</li>
                                 </ul>
                             </div>
                         </div>
@@ -82,7 +79,7 @@ const MovieGrid = () => {
                                 )}
                             </div>
                             <div className="topbar-filter">
-                                <span className='text-white' >Page {page} of 381:</span>
+                                <span className='text-white' style={{fontSize:'15px'}}>Page {page} of 381:</span>
                                 <div className={classes.root}>
                                     <Pagination count={381} page={page} onChange={handleChange} color='primary' />
                                 </div>

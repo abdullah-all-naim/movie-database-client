@@ -4510,6 +4510,7 @@ ul {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
+  font-size: 15px;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 30px;
@@ -4534,6 +4535,7 @@ ul {
 }
 .topbar-filter p span {
   color: #4280bf;
+  font-size: 15px;
 }
 .topbar-filter label,
 .topbar-filter select {

@@ -2,7 +2,6 @@ import React, { useContext, useEffect, useState } from 'react';
 import { useHistory, Link } from 'react-router-dom';
 
 const FavouriteMovies = ({user}) => {
-    console.log(user)
     const history = useHistory()
     const [showFavList, setShowFavList] = useState([])
     useEffect(() => {
